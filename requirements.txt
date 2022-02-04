@@ -1,0 +1,11 @@
+Django~=3.1.7
+djangorestframework~=3.12.2
+pip~=9.0.1
+wheel~=0.30.0
+cryptography~=2.1.4
+keyring~=10.6.0
+pytz~=2021.1
+sqlparse~=0.4.1
+asgiref~=3.3.1
+PyYAML~=3.12
+setuptools~=39.0.1
