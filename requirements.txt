@@ -9,3 +9,4 @@ sqlparse~=0.4.1
 asgiref~=3.3.1
 PyYAML~=3.12
 setuptools~=39.0.1
+django-filter~=21.1

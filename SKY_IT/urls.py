@@ -17,7 +17,15 @@ from django.contrib import admin
 
 from django.urls import path, include
 
+import skyapp2
+from skyapp2.views import car_class
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('skyit_url/', include('skyit_app.urls')),
+    path('skyit_url/', include('skyapp.urls')),
+    path('disp/', include('skyapp2.urls')),
+    path('delete/<str:color>', skyapp2.views.Destroy_api.as_view()),
+    path('list/', skyapp2.views.car_class.as_view()),
+    path('create/', skyapp2.views.create_car.as_view()),
+    path('update/<int:id>', skyapp2.views.Update_car.as_view())
 ]
